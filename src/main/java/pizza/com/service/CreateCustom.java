@@ -1,4 +1,4 @@
-package pizza;
+package pizza.com.service;
 
 import java.util.Scanner;
 
@@ -9,10 +9,15 @@ import java.util.Scanner;
  *
  */
 public class CreateCustom {
+    /*
+    public static void main(String[] args) {
+        CreateCustom cr = new CreateCustom();
+    }
+    */
 
     Scanner scan = new Scanner(System.in);
 
-    CreateCustom(){
+    public CreateCustom(){
         System.out.println("Щоб створити замовлення натисніть клавішу '1' ");
         byte a = scan.nextByte();
 

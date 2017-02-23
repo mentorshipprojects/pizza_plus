@@ -1,4 +1,4 @@
-package pizza;
+package pizza.com.domain;
 
 import java.util.Scanner;
 
@@ -6,13 +6,11 @@ import java.util.Scanner;
  * Created by user on 17.02.2017.
  * Меню напоїв
  */
-public class Drinks {
+public class Drink {
     private String name;
     private float price;
 
     Scanner var=new Scanner(System.in);
-
-
 
     public String getName() {
         return name;
@@ -30,20 +28,9 @@ public class Drinks {
         this.price = price;
     }
 
+    public Drink(){
 
-
-    public void drinkCheck(){
-        System.out.print(name+" : ");
-        System.out.println(price+" грн.");
-    }
-
-
-
-
-
-    Drinks(){
-
-        byte res=var.nextByte();
+        int res=var.nextInt();
 
         switch(res){
 
@@ -86,10 +73,6 @@ public class Drinks {
                 System.out.println("Невірний ввід. Спробуйте ще раз");
                 break;
             }
-
         }
-
-
-
     }
 }

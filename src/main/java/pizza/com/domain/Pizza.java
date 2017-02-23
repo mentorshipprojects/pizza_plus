@@ -1,4 +1,4 @@
-package pizza;
+package pizza.com.domain;
 
 /**
  * Created by user on 16.02.2017.
@@ -6,7 +6,7 @@ package pizza;
  */
 import java.util.Scanner;
 
-public class Pizza_sMenu {
+public class Pizza {
 
     private String name;
     private float price;
@@ -30,13 +30,14 @@ public class Pizza_sMenu {
         this.price = price;
     }
 
-
+/*
     public void pizzaCheck(){
         System.out.print(name+" : ");
         System.out.println(price+" грн.");
     }
+    */
 
-    Pizza_sMenu(){
+    public Pizza(){
 
         byte res=var.nextByte();
 
@@ -91,12 +92,6 @@ public class Pizza_sMenu {
                 System.out.println("Невірний ввід. Спробуйте ще раз");
                 break;
             }
-
         }
-
-
-
     }
-
-
 }
