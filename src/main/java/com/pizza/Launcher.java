@@ -1,11 +1,11 @@
-package pizza.com;
+package com.pizza;
 
 
 /**
  * Created by user on 22.02.2017.
  */
 
-import pizza.com.service.*;
+import com.pizza.service.communicationWithUser.CreateCustom;
 
 public class Launcher {
     public static void main(String[] args) {

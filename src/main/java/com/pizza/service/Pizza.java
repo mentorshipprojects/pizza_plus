@@ -1,4 +1,4 @@
-package pizza.com.domain;
+package com.pizza.service;
 
 /**
  * Created by user on 16.02.2017.

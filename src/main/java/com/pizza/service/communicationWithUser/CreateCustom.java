@@ -1,19 +1,14 @@
-package pizza.com.service;
+package com.pizza.service.communicationWithUser;
 
 import java.util.Scanner;
 
 /**
  * Created by user on 16.02.2017.
  * Допоміжний клас. Застосовується виключно для створення замовлення.
- * Після цього переходить в MainMenu()
+ * Після цього переходить в Communication()
  *
  */
 public class CreateCustom {
-    /*
-    public static void main(String[] args) {
-        CreateCustom cr = new CreateCustom();
-    }
-    */
 
     Scanner scan = new Scanner(System.in);
 
@@ -27,7 +22,7 @@ public class CreateCustom {
 
         }
         else{
-            new MainMenu();
+            new Communication();
         }
     }
 }

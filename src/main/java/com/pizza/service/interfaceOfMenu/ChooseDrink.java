@@ -1,4 +1,6 @@
-package pizza.com.domain;
+package com.pizza.service.interfaceOfMenu;
+
+import com.pizza.service.interfaceOfMenu.Choose;
 
 /**
  * Created by user on 23.02.2017.

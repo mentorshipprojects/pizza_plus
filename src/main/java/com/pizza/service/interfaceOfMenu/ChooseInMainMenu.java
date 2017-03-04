@@ -1,9 +1,11 @@
-package pizza.com.domain;
+package com.pizza.service.interfaceOfMenu;
+
+import com.pizza.service.interfaceOfMenu.Choose;
 
 /**
  * Created by user on 23.02.2017.
  */
-public class ChooseInMainMenu implements Choose{
+public class ChooseInMainMenu implements Choose {
     @Override
     public void choose() {
         System.out.println("Виберіть дію:");

@@ -1,4 +1,4 @@
-package pizza.com.domain;
+package com.pizza.service.interfaceOfMenu;
 
 /**
  * Created by user on 23.02.2017.

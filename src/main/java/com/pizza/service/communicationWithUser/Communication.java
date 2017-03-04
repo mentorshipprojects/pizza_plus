@@ -1,6 +1,9 @@
-package pizza.com.service;
+package com.pizza.service.communicationWithUser;
 
-import pizza.com.domain.*;
+import com.pizza.service.*;
+import com.pizza.service.interfaceOfMenu.*;
+import com.pizza.service.pizzaWith_Ingredients.*;
+
 import java.util.Scanner;
 
 /**
@@ -11,13 +14,13 @@ import java.util.Scanner;
  * Також наразі не передбачено функціональстей стосовно знижок та прив'язок рахунку до дати чи дня тиждня
  * Підводиться сумарний підсумок всього замовленого
  */
-public class MainMenu{
+public class Communication {
 
     Scanner scan = new Scanner(System.in);
 
     public double sum = 0f;                 // Допоміжна змінна, що допомагає визначити підсумкове значення замовлення
 
-    MainMenu(){
+    Communication(){
 
         String getNames = "Begin";       // Допоміжна змінна, що допомагає визначити назву замовлення в меню
         float getPrices = 0f;           // Допоміжна змінна, що допомагає визначити ціну замовлення в меню
@@ -36,7 +39,12 @@ public class MainMenu{
 
             int a = scan.nextInt();
 
-            if(a==2){   // Підменю Піцци
+            if(a==1){
+                FactoryPizza factoryPizza= new FactoryPizza();
+                continue;
+            }
+
+            else if(a==2){   // Підменю Піцци
 
                 ChoosePizza choose2 = new ChoosePizza();    // Об'єкт для відображення
                 choose2.choose();                           // вибору у підменю піцци
@@ -81,9 +89,7 @@ public class MainMenu{
                 }
 
                 System.out.println("              Сума : "+sum+" грн");
-                System.out.println("______________________________________________________________________________________");
-                CheckDiscount check = new CheckDiscount(sum);
-                //check.check();
+                Bill bill = new Bill(sum);
                 break;
             }
             else {

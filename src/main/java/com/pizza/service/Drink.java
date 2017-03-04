@@ -1,4 +1,4 @@
-package pizza.com.domain;
+package com.pizza.service;
 
 import java.util.Scanner;
 
