@@ -8,15 +8,15 @@ import com.pizza.service.interfaceOfMenu.Choose;
 public class ChoosePizza implements Choose {
     @Override
     public void choose() {
-        System.out.println("Виберіть дію:");
-        System.out.println("Клавіша '1' - Салямі ");
-        System.out.println("Клавіша '2' - Тоскана ");
-        System.out.println("Клавіша '3' - Провінціале ");
-        System.out.println("Клавіша '4' - Кардінале ");
-        System.out.println("Клавіша '5' - Пікантна");
-        System.out.println("Клавіша '6' - Бісмарк");
-        System.out.println("Клавіша '7' - Peperoncino");
-        System.out.println("Клавіша '8' - Вегетеріана");
-        System.out.println("Клавіша '9' - Калабрезе");
+        System.out.println("Choose action:");
+        System.out.println("Press '1' - Salami");
+        System.out.println("Press '2' - Toscana");
+        System.out.println("Press '3' - Provincialle");
+        System.out.println("Press '4' - Cardinale");
+        System.out.println("Press '5' - Picante");
+        System.out.println("Press '6' - Bismark");
+        System.out.println("Press '7' - Peperoncino");
+        System.out.println("Press '8' - Vegetariana");
+        System.out.println("Press '9' - Calabreze");
     }
 }

@@ -8,10 +8,9 @@ import com.pizza.service.interfaceOfMenu.Choose;
 public class ChooseInMainMenu implements Choose {
     @Override
     public void choose() {
-        System.out.println("Виберіть дію:");
-            /* System.out.println("Клавіша '1' - PizzaMix(клієнт сам обирає складники піцци)");                Дана функціональність покищо не працює */
-        System.out.println("Клавіша '2' - Вибір піцци з меню");
-        System.out.println("Клавіша '3' - Напої");
-        System.out.println("Клавіша '9' - Роздрукувати чек ");
+        System.out.println("Choose action:");
+        System.out.println("Press '2' - Choose pizza from menu");
+        System.out.println("Press '3' - Drinks");
+        System.out.println("Press '9' - Print a bill");
     }
 }

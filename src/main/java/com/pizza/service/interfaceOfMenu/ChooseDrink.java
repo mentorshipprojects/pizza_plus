@@ -8,13 +8,13 @@ import com.pizza.service.interfaceOfMenu.Choose;
 public class ChooseDrink implements Choose {
     @Override
     public void choose() {
-        System.out.println("Виберіть дію:");
-        System.out.println("Клавіша '1' - Мохіто ");
-        System.out.println("Клавіша '2' - Лимонад ");
-        System.out.println("Клавіша '3' - Лимонад з імбирем ");
-        System.out.println("Клавіша '4' - Пепсі(0,5 л) ");
-        System.out.println("Клавіша '5' - Бонаква(0,5 л) ");
-        System.out.println("Клавіша '6' - Моршинська(0,5 л) ");
-        System.out.println("Клавіша '7' - Сік сандора (0,3 л) ");
+        System.out.println("Choose action:");
+        System.out.println("Press '1' - Mojito");
+        System.out.println("Press '2' - Lemonade");
+        System.out.println("Press '3' - Lemonade with ginger");
+        System.out.println("Press '4' - Pepsi(0,5 l) ");
+        System.out.println("Press '5' - Bonaqua(0,5 l,min. water) ");
+        System.out.println("Press '6' - Morshyns'ka(0,5 l,min. water ) ");
+        System.out.println("Press '7' - Sandora juice (0,3 l) ");
     }
 }
