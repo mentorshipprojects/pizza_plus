@@ -1,6 +1,6 @@
 package com.pizza.service.communicationWithUser;
 
-import com.pizza.service.*;
+import com.pizza.service.bill.BillService;
 import com.pizza.service.interfaceOfMenu.*;
 import com.pizza.service.submenuLogic.*;
 import java.util.Scanner;
@@ -52,10 +52,10 @@ public class Communication {
 
                 continue;
             }
-            else if(a==9){// Prints a bill
+            else if(a==9){// Prints a billService
 
-                Bill bill = new Bill();
-                bill.printBill(sum, arrNames, arrPrices, i);
+                BillService billService = new BillService();
+                billService.printBill(sum, arrNames, arrPrices, i);
                 break;
             }
             else {

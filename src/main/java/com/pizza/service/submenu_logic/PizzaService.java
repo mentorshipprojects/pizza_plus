@@ -1,8 +1,8 @@
-package com.pizza.service.submenuLogic;
+package com.pizza.service.submenu_logic;
 
 import com.pizza.domain.DataPizzaProduct;
-import com.pizza.service.communicationWithUser.NumberOfAction;
-import com.pizza.service.interfaceOfMenu.ChoosePizza;
+import com.pizza.service.communication_with_user.NumberOfAction;
+import com.pizza.service.interface_of_menu.ChoosePizza;
 
 import java.util.Scanner;
 

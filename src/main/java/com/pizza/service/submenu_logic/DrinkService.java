@@ -1,8 +1,8 @@
-package com.pizza.service.submenuLogic;
+package com.pizza.service.submenu_logic;
 
 import com.pizza.domain.DataDrinkProduct;
-import com.pizza.service.communicationWithUser.NumberOfAction;
-import com.pizza.service.interfaceOfMenu.ChooseDrink;
+import com.pizza.service.communication_with_user.NumberOfAction;
+import com.pizza.service.interface_of_menu.ChooseDrink;
 import java.util.Scanner;
 
 /**
@@ -49,8 +49,8 @@ public class DrinkMenuLogic {
             arrNames[j] = name;
             arrPrices[j] = price;
 
-            ChooseDrink choose = new ChooseDrink();    // Об'єкт для відображення
-            choose.choose();                           // вибору у підменю піцци
+            ChooseDrink choose = new ChooseDrink();    // Object for displaying
+            choose.choose();                           // a choice in the pizza's submenu
             int b = scan.nextInt();
 
             if (b == 1 | b == 2 | b == 3 | b == 4 | b == 5 | b == 6 | b==7 ) {
