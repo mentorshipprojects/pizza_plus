@@ -1,6 +1,6 @@
 package com.pizza.service.submenu_logic;
 
-import com.pizza.domain.DataDrinkProduct;
+import com.pizza.domain.DrinkContainer;
 import com.pizza.service.communication_with_user.NumberOfAction;
 import com.pizza.service.interface_of_menu.ChooseDrink;
 import java.util.Scanner;
@@ -8,7 +8,7 @@ import java.util.Scanner;
 /**
  * Created by user on 08.03.2017.
  */
-public class DrinkMenuLogic {
+public class DrinkService {
     private String name;
     private double price;
     private int i;
@@ -39,7 +39,7 @@ public class DrinkMenuLogic {
 
     Scanner scan = new Scanner(System.in);
 
-    public DrinkMenuLogic(int i){
+    public DrinkService(int i){
 
         String [] arrNames = new String[1000];
         double [] arrPrices = new double[1000];
@@ -55,7 +55,7 @@ public class DrinkMenuLogic {
 
             if (b == 1 | b == 2 | b == 3 | b == 4 | b == 5 | b == 6 | b==7 ) {
 
-                DataDrinkProduct drinkProduct = new DataDrinkProduct();
+                DrinkContainer drinkProduct = new DrinkContainer();
                 drinkProduct.product.get(b - 1);
 
                 NumberOfAction numberOfAction = new NumberOfAction();

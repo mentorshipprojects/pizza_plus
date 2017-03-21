@@ -6,11 +6,11 @@ import com.pizza.service.*;
 /**
  * Created by user on 05.03.2017.
  */
-public class DataPizzaProduct {
+public class PizzaContainer {
 
     public ArrayList<Product> product = new ArrayList<>();
 
-        public DataPizzaProduct(){
+        public PizzaContainer(){
 
             product.add(0, new Product("Salami",58.00));
             product.add(1, new Product("Toscana",62.00));

@@ -1,15 +1,14 @@
 package com.pizza.service.submenu_logic;
 
-import com.pizza.domain.DataPizzaProduct;
+import com.pizza.domain.PizzaContainer;
 import com.pizza.service.communication_with_user.NumberOfAction;
 import com.pizza.service.interface_of_menu.ChoosePizza;
-
 import java.util.Scanner;
 
 /**
  * Created by user on 07.03.2017.
  */
-public class PizzaMenuLogic {
+public class PizzaService {
 
     private String name;
     private double price;
@@ -41,7 +40,7 @@ public class PizzaMenuLogic {
 
     Scanner scan = new Scanner(System.in);
 
-    public PizzaMenuLogic(int i){
+    public PizzaService(int i){
 
         //boolean c = true;
         String [] arrNames = new String[1000];
@@ -58,7 +57,7 @@ public class PizzaMenuLogic {
 
             if (b == 1 | b == 2 | b == 3 | b == 4 | b == 5 | b == 6 | b == 7 | b == 8 | b == 9) {
 
-                DataPizzaProduct pizzaProduct = new DataPizzaProduct();
+                PizzaContainer pizzaProduct = new PizzaContainer();
                 pizzaProduct.product.get(b - 1);
 
                 NumberOfAction numberOfAction = new NumberOfAction();

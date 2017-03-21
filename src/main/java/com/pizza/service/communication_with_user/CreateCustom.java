@@ -1,4 +1,4 @@
-package com.pizza.service.communicationWithUser;
+package com.pizza.service.communication_with_user;
 
 import java.util.Scanner;
 

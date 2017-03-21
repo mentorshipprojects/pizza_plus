@@ -8,7 +8,7 @@ import java.time.format.DateTimeFormatter;
 /**
  * Created by user on 14.03.2017.
  */
-public class BillContent{
+public class BillContainer{
 
     LocalDate date = LocalDate.now();
     DateTimeFormatter d1 = DateTimeFormatter.ofPattern("dd.MM.yyyy");   //Veriable which defines date

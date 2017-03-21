@@ -1,13 +1,12 @@
 package com.pizza.domain;
 
 import com.pizza.service.Product;
-
 import java.util.ArrayList;
 
 /**
  * Created by user on 20.03.2017.
  */
-public class CoffeContainerFree {
+public class CoffeeContainerFree {
     public ArrayList<Product> product = new ArrayList<>();
 
     public CoffeeContainerFree(){

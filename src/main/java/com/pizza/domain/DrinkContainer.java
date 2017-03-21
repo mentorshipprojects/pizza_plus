@@ -7,11 +7,11 @@ import java.util.ArrayList;
  * Created by user on 08.03.2017.
  */
 
-public class DataDrinkProduct {
+public class DrinkContainer {
 
     public ArrayList<Product> product = new ArrayList<>();
 
-    public DataDrinkProduct(){
+    public DrinkContainer(){
 
         product.add(0, new Product("Mojito",19.00));
         product.add(1, new Product("Lemonade",18.00));

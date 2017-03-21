@@ -1,4 +1,4 @@
-package com.pizza.service.communicationWithUser;
+package com.pizza.service.communication_with_user;
 
 /**
  * Created by user on 06.03.2017.
