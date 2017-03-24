@@ -4,6 +4,8 @@ import com.pizza.domain.*;
 import com.pizza.service.communication_with_user.NumberOfAction;
 import com.pizza.service.date.DateContainer;
 import com.pizza.service.interface_of_menu.ChooseCoffee;
+import com.pizza.service.messages.WrongAction;
+
 import java.util.Scanner;
 
 /**
@@ -55,7 +57,7 @@ public class CoffeeService { private String name;
 
             DateContainer dateContainer = new DateContainer();
 
-            if(dateContainer.dayOfWeek.format(dateContainer.date).equals("1") & c<4){
+            if(dateContainer.dayOfWeek.format(dateContainer.date).equals("2") && c<4){
 
                 CoffeeContainerFree coffeeProduct = new CoffeeContainerFree();
 
@@ -72,8 +74,8 @@ public class CoffeeService { private String name;
                     break;
                 }
                 else {
-                    System.out.println("______________________________________________________________________________________");
-                    System.out.println("You entered wrong action. Please repeat your choice \n");
+                    WrongAction wrongAction = new WrongAction();
+                    wrongAction.printMessageAboutWrongAction();
                     continue;
                 }
             }
@@ -94,8 +96,8 @@ public class CoffeeService { private String name;
                     break;
                 }
                 else {
-                    System.out.println("______________________________________________________________________________________");
-                    System.out.println("You entered wrong action. Please repeat your choice \n");
+                    WrongAction wrongAction = new WrongAction();
+                    wrongAction.printMessageAboutWrongAction();
                     continue;
                 }
             }

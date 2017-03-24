@@ -2,6 +2,7 @@ package com.pizza.service.communication_with_user;
 
 import com.pizza.service.bill.BillService;
 import com.pizza.service.interface_of_menu.*;
+import com.pizza.service.messages.WrongAction;
 import com.pizza.service.submenu_logic.*;
 import java.util.Scanner;
 
@@ -68,8 +69,8 @@ public class Communication {
                 break;
             }
             else {
-                System.out.println("______________________________________________________________________________________");
-                System.out.println("You entered wrong action. Please repeat your choice \n");
+                WrongAction wrongAction = new WrongAction();
+                wrongAction.printMessageAboutWrongAction();
                 --i;
                 continue;
             }

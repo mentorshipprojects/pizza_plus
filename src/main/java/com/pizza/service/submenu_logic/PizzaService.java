@@ -3,6 +3,8 @@ package com.pizza.service.submenu_logic;
 import com.pizza.domain.PizzaContainer;
 import com.pizza.service.communication_with_user.NumberOfAction;
 import com.pizza.service.interface_of_menu.ChoosePizza;
+import com.pizza.service.messages.WrongAction;
+
 import java.util.Scanner;
 
 /**
@@ -69,8 +71,8 @@ public class PizzaService {
                 break;
             }
               else {
-                System.out.println("______________________________________________________________________________________");
-                System.out.println("You entered wrong action. Please repeat your choice \n");
+                WrongAction wrongAction = new WrongAction();
+                wrongAction.printMessageAboutWrongAction();
                 continue;
             }
         }
