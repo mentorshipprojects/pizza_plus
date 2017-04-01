@@ -1,12 +1,11 @@
 package com.pizza.service.communication_with_user;
 
+import com.pizza.service.messages.WrongAction;
 import java.util.Scanner;
 
 /**
  * Created by user on 16.02.2017.
- * Auxiliary variable. Used only for створення замовлення.
- * Після цього переходить в Communication()
- *
+ * Used only for creating a custom.
  */
 
 public class CreateCustom {
@@ -18,8 +17,8 @@ public class CreateCustom {
         int a = scan.nextInt();
 
         if (a!=1){
-            System.out.println("______________________________________________________________________________________");
-            System.out.println("You entered wrong action. Please repeat your choice \n");
+            WrongAction wrongAction = new WrongAction();
+            wrongAction.printMessageAboutWrongAction();
             new CreateCustom();
         } else{
             new Communication();
