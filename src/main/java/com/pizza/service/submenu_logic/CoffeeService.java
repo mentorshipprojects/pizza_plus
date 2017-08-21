@@ -59,17 +59,17 @@ public class CoffeeService { private String name;
 
             if(dateContainer.dayOfWeek.format(dateContainer.date).equals("2") && c<4){
 
-                CoffeeContainerFree coffeeProduct = new CoffeeContainerFree();
+                Menu coffeeProduct = new Menu();
 
                 if (b == 1 | b == 2 | b == 3 | b == 4 | b == 5 ) {
 
-                    coffeeProduct.product.get(b - 1);
+                    coffeeProduct.getFreeCoffee().get(b - 1);
 
                     NumberOfAction numberOfAction = new NumberOfAction();
-                    numberOfAction.printNuberOfAction(coffeeProduct.product.get(b - 1).getName(), coffeeProduct.product.get(b - 1).getPrice(), i);
+                    numberOfAction.printNuberOfAction(coffeeProduct.getFreeCoffee().get(b - 1).getName(), coffeeProduct.getFreeCoffee().get(b - 1).getPrice(), i);
 
-                    name = coffeeProduct.product.get(b - 1).getName();
-                    price = coffeeProduct.product.get(b - 1).getPrice();
+                    name = coffeeProduct.getFreeCoffee().get(b - 1).getName();
+                    price = coffeeProduct.getFreeCoffee().get(b - 1).getPrice();
                     this.i=i;
                     break;
                 }
@@ -81,17 +81,17 @@ public class CoffeeService { private String name;
             }
             else{
 
-                CoffeeContainer coffeeProduct = new CoffeeContainer();
+                Menu coffeeProduct = new Menu();
 
                 if (b == 1 | b == 2 | b == 3 | b == 4 | b == 5 ) {
 
-                    coffeeProduct.product.get(b - 1);
+                    coffeeProduct.getCoffee().get(b - 1);
 
                     NumberOfAction numberOfAction = new NumberOfAction();
-                    numberOfAction.printNuberOfAction(coffeeProduct.product.get(b - 1).getName(), coffeeProduct.product.get(b - 1).getPrice(), i);
+                    numberOfAction.printNuberOfAction(coffeeProduct.getCoffee().get(b - 1).getName(), coffeeProduct.getCoffee().get(b - 1).getPrice(), i);
 
-                    name = coffeeProduct.product.get(b - 1).getName();
-                    price = coffeeProduct.product.get(b - 1).getPrice();
+                    name = coffeeProduct.getCoffee().get(b - 1).getName();
+                    price = coffeeProduct.getCoffee().get(b - 1).getPrice();
                     this.i=i;
                     break;
                 }

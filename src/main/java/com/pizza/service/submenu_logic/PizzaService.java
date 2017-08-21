@@ -1,6 +1,6 @@
 package com.pizza.service.submenu_logic;
 
-import com.pizza.domain.PizzaContainer;
+import com.pizza.domain.Menu;
 import com.pizza.service.communication_with_user.NumberOfAction;
 import com.pizza.service.interface_of_menu.ChoosePizza;
 import com.pizza.service.messages.WrongAction;
@@ -59,14 +59,14 @@ public class PizzaService {
 
             if (b == 1 | b == 2 | b == 3 | b == 4 | b == 5 | b == 6 | b == 7 | b == 8 | b == 9) {
 
-                PizzaContainer pizzaProduct = new PizzaContainer();
-                pizzaProduct.product.get(b - 1);
+                Menu pizzaProduct = new Menu();
+                pizzaProduct.getPizzas().get(b - 1);
 
                 NumberOfAction numberOfAction = new NumberOfAction();
-                numberOfAction.printNuberOfAction(pizzaProduct.product.get(b - 1).getName(), pizzaProduct.product.get(b - 1).getPrice(), i);
+                numberOfAction.printNuberOfAction(pizzaProduct.getPizzas().get(b - 1).getName(), pizzaProduct.getPizzas().get(b - 1).getPrice(), i);
 
-                name = pizzaProduct.product.get(b - 1).getName();
-                price = pizzaProduct.product.get(b - 1).getPrice();
+                name = pizzaProduct.getPizzas().get(b - 1).getName();
+                price = pizzaProduct.getPizzas().get(b - 1).getPrice();
                 this.i=i;
                 break;
             }
