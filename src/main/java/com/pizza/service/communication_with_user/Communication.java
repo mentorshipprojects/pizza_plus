@@ -20,7 +20,7 @@ public class Communication {
         String getNames = "Begin";       // Additional variable, which helps to define name of the custom in the menu
         double getPrices = 0f;           // Additional variable, which helps to define price of the custom in the menu
         double sum = 0f;                 // Additional variable, which helps to define total value of the custom
-        int c = 0;
+        int c = 0;                       // Additional variable, which helps to define possibility buying a free coffee
 
         String [] arrNames = new String[1000];
         double [] arrPrices = new double[1000];

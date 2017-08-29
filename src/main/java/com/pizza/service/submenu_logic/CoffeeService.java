@@ -6,43 +6,14 @@ import com.pizza.service.date.DateContainer;
 import com.pizza.service.interface_of_menu.ChooseCoffee;
 import com.pizza.service.messages.WrongAction;
 
-import java.util.Scanner;
-
 /**
  * Created by user on 20.03.2017.
  */
-public class CoffeeService { private String name;
-    private double price;
-    private int i;
-
-    public String getName() {
-        return name;
-    }
-
-    public void setName(String name) {
-        this.name = name;
-    }
-
-    public double getPrice() {
-        return price;
-    }
-
-    public void setPrice(double price) {
-        this.price= price;
-    }
-
-    public int getI() {
-        return i;
-    }
-
-    public void setI(int i) {
-        this.i = i;
-    }
-
-    Scanner scan = new Scanner(System.in);
+public class CoffeeService extends SubmenuService {
 
     public CoffeeService(int i,int c){
 
+        super(i, c);
         String [] arrNames = new String[1000];
         double [] arrPrices = new double[1000];
 
@@ -51,8 +22,8 @@ public class CoffeeService { private String name;
             arrNames[j] = name;
             arrPrices[j] = price;
 
-            ChooseCoffee choose = new ChooseCoffee();    // Object for displaying
-            choose.choose();                           // a choice in the drink's submenu
+            ChooseCoffee choose = new ChooseCoffee();       // Object for displaying
+            choose.choose();                                // a choice in the coffee's submenu
             int b = scan.nextInt();
 
             DateContainer dateContainer = new DateContainer();

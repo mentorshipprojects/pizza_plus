@@ -5,46 +5,14 @@ import com.pizza.service.communication_with_user.NumberOfAction;
 import com.pizza.service.interface_of_menu.ChoosePizza;
 import com.pizza.service.messages.WrongAction;
 
-import java.util.Scanner;
-
 /**
  * Created by user on 07.03.2017.
  */
-public class PizzaService {
-
-    private String name;
-    private double price;
-    private int i;
-
-    public String getName() {
-        return name;
-    }
-
-    public void setName(String name) {
-        this.name = name;
-    }
-
-    public double getPrice() {
-        return price;
-    }
-
-    public void setPrice(double price) {
-        this.price= price;
-    }
-
-    public int getI() {
-        return i;
-    }
-
-    public void setI(int i) {
-        this.i = i;
-    }
-
-    Scanner scan = new Scanner(System.in);
+public class PizzaService extends SubmenuService {
 
     public PizzaService(int i){
 
-        //boolean c = true;
+        super(i);
         String [] arrNames = new String[1000];
         double [] arrPrices = new double[1000];
 
@@ -53,8 +21,8 @@ public class PizzaService {
             arrNames[j] = name;
             arrPrices[j] = price;
 
-            ChoosePizza choose = new ChoosePizza();    // Об'єкт для відображення
-            choose.choose();                           // вибору у підменю піцци
+            ChoosePizza choose = new ChoosePizza();    // Object for displaying
+            choose.choose();                           // a choice in the pizza's submenu
             int b = scan.nextInt();
 
             if (b == 1 | b == 2 | b == 3 | b == 4 | b == 5 | b == 6 | b == 7 | b == 8 | b == 9) {
