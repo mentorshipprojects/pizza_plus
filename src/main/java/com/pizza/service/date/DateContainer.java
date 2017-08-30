@@ -19,8 +19,8 @@ public class DateContainer {
     public DateTimeFormatter weekOfMonth = DateTimeFormatter.ofPattern("W");    //Variable which defines week of the month
     public DateTimeFormatter monthOfYear = DateTimeFormatter.ofPattern("M");    //Variable which defines month of the year
 
-    public LocalDate independenceDay = LocalDate.parse("2017-08-24");            //Date of Independence Day
-    public LocalDate christmasDay = LocalDate.parse("2017-01-07");
+    public LocalDate independenceDay = LocalDate.parse("2017-08-24");            //Date of Independence's Day
+    public LocalDate christmasDay = LocalDate.parse("2017-01-07");                  // Date of the Christmas's day in Ukraine
     public DateTimeFormatter dateFormatter2 = DateTimeFormatter.ofPattern("dd.MM");         //Additional pattern for defining Independence Day
 
 }
