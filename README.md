@@ -92,7 +92,7 @@
         Press '1' for creating a new custom
     ~~~
     
-    ## Use case #1(30.08.2017)
+    ## Use case #2(30.08.2017)
     
     1. Beginning of the program:
     1.1. In the beginnig of the program you'll see such message in the console:"Press '1' for creating a new custom"
@@ -151,12 +151,12 @@
                     Press '5' - Latte  ~~~
                 2.3.2. You pressed from '1' to '5' 
                 This situation is similar as in the previous section 2.1.2 (read above).    
-            2.4. You pressed '9'
-            
+            2.4. You pressed '9':
+            ~~~
             Has customer a discount?
  
             Press '1' if 'YES' 
-            Press '2' if 'NO' 
+            Press '2' if 'NO' ~~~
             
                 2.4.1. If you press '1' you'll see a message in the console with full information of your custom(including 10% discount):
                 all items, total sum of the custom, date, time etc. For example:
@@ -205,6 +205,18 @@
                     Your celebration discount are 50 % : Total bill:51,45 grn
                     ______________________________________________________________________________________
                     SATURDAY : Date: 07.01.2017 : Time: 11:54:37 : Pizza plus wish you merry Christmas!!! ~~~
+                
+                2.4.5. Every Monday for all clients the first Coffee(from sumbenu Coffee, digit '4') is free. The next coffee won't free. See as example:
+                   ~~~ ______________________________________________________________________________________
+                        Your bill:
+
+                        Espresso : 0.0 grn
+                        Americano : 16.0 grn
+                                      Sum : 16.0 grn
+                        Tips: 0,80 grn, Sum with tips: 16,80
+                        Total bill : 16,80 grn
+                        ______________________________________________________________________________________
+                        MONDAY : Date: 28.08.2017 : Time: 21:55:12 : Pizza plus wish you wonderful day!!!      ~~~
 
                                             
             2.5. You pressed something else digit

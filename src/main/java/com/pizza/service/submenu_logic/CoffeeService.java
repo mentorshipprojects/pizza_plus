@@ -28,7 +28,7 @@ public class CoffeeService extends SubmenuService {
 
             DateContainer dateContainer = new DateContainer();
 
-            if(dateContainer.dayOfWeek.format(dateContainer.date).equals("2") && c<4){
+            if(dateContainer.dayOfWeek.format(dateContainer.date).equals("2") && c<2){
 
                 Menu coffeeProduct = new Menu();
 
